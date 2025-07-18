@@ -1,0 +1,25 @@
+[
+  {
+    "poster": "poster1.jpg",
+    "title": "The Epic Quest",
+    "cast": ["Chris Evans", "Scarlett Johansson"],
+    "description": "A thrilling adventure through a fantasy world.",
+    "labels": ["bluray", "fhd"],
+    "downloadLink": "https://drive.google.com/uc?export=download&id=FILE_ID_1",
+    "rating": 4.5,
+    "isTopRated": true,
+    "isMoovied": true
+  },
+  {
+    "poster": "poster2.jpg",
+    "title": "Dark Secrets",
+    "cast": ["Tom Hardy", "Emma Watson"],
+    "description": "A gripping thriller about hidden truths.",
+    "labels": ["hd", "web-dl"],
+    "downloadLink": "https://drive.google.com/uc?export=download&id=FILE_ID_2",
+    "rating": 4.0,
+    "isTopRated": false,
+    "isMoovied": false
+  }
+  // Add entries for all 100 movies here
+]
