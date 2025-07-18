@@ -26,3 +26,4 @@ with open("movies.json", "w") as f:
     json.dump(movies, f, indent=2)
 
 print("movies.json generated successfully!")
+
