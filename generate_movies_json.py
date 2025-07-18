@@ -17,8 +17,8 @@ for filename in os.listdir(movies_dir):
             "labels": ["bluray", "fhd"],
             "downloadLink": "https://example.com/download/REPLACE_WITH_ACTUAL_LINK",
             "rating": 4.0,
-            "isTopRated": False,
-            "isMoovied": False
+            "isTopRated": false,
+            "isMoovied": false
         })
 
 # Save to movies.json
@@ -26,4 +26,3 @@ with open("movies.json", "w") as f:
     json.dump(movies, f, indent=2)
 
 print("movies.json generated successfully!")
-
