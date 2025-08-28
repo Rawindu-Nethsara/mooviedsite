@@ -2,21 +2,23 @@ fetch('posts.json')
   .then(response => response.json())
   .then(posts => {
     const container = document.getElementById('posts-container');
+
     posts.forEach(post => {
-      const postDiv = document.createElement('div');
-      postDiv.classList.add('post');
+      const card = document.createElement('a'); // card is clickable
+      card.href = post.url;
+      card.classList.add('post-card');
 
-      const title = document.createElement('a');
-      title.href = post.url; // now points to posts/posts1.html
-      title.textContent = post.title;
-      title.classList.add('post-title');
+      const img = document.createElement('img');
+      img.src = post.image || 'images/default.jpg';
+      img.alt = post.title;
 
-      const labels = document.createElement('div');
-      labels.textContent = "Labels: " + post.labels.join(', ');
-      labels.classList.add('post-labels');
+      const titleDiv = document.createElement('div');
+      titleDiv.classList.add('post-title');
+      titleDiv.textContent = post.title;
 
-      postDiv.appendChild(title);
-      postDiv.appendChild(labels);
-      container.appendChild(postDiv);
+      card.appendChild(img);
+      card.appendChild(titleDiv);
+
+      container.appendChild(card);
     });
   });
