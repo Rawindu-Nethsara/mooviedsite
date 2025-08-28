@@ -1,57 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Interstellar — Player</title>
-
-  <!-- Plyr CSS (CDN) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@4/dist/plyr.css" />
-
-  <style>
-    body{
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      display:flex;
-      gap:20px;
-      align-items:center;
-      justify-content:center;
-      min-height:100vh;
-      margin:0;
-      background:linear-gradient(180deg,#0b1220,#071025);
-      color:#e6eef8;
-      padding:24px;
-    }
-    .container{ width:100%; max-width:960px; }
-    h1{ font-size:20px; margin:0 0 12px 0; }
-    .notice{ font-size:13px; opacity:0.8; margin-top:8px; }
-    video{ width:100%; height:auto; border-radius:10px; background:#000; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Interstellar (720p) — Player</h1>
-
-    <!-- HTML5 video element -->
-    <video id="player" controls crossorigin="anonymous" playsinline>
-      <!-- Replace the src below if you want to use a different URL -->
-      <source src="http://103.145.232.246/Data/movies/Hollywood/2021/Interstellar%20%282014%29/Interstellar.2014.720p.BluRay.x264.YIFY.mp4" type="video/mp4">
-      Your browser does not support HTML5 video. You can download the file <a href="http://103.145.232.246/Data/movies/Hollywood/2021/Interstellar%20%282014%29/Interstellar.2014.720p.BluRay.x264.YIFY.mp4">here</a>.
-    </video>
-
-    <div class="notice">
-      Note: If you open this page over HTTPS (e.g. GitHub Pages), a video served over <code>http://</code> may be blocked (mixed-content). See the explanation and fixes below.
-    </div>
-  </div>
-
-  <!-- Plyr JS (CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/plyr@4/dist/plyr.umd.js"></script>
-  <script>
-    const player = new Plyr('#player', {
-      tooltips: { controls: true, seek: true },
-    });
-
-    // Optional: try autoplay if allowed by browser (usually not on mobile)
-    // player.play().catch(() => {});
-  </script>
-</body>
-</html>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<video id="player" playsinline controls>
+  <source src="http://103.145.232.246/Data/movies/Hollywood/2021/Interstellar%20%282014%29/Interstellar.2014.720p.BluRay.x264.YIFY.mp4" type="video/mp4" />
+</video>
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+<script>
+  const player = new Plyr('#player');
+</script>
