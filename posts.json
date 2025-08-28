@@ -2,11 +2,11 @@
   {
     "title": "My First Post",
     "labels": ["Tech", "JavaScript"],
-    "url": "post1.html"
+    "url": "posts/posts1.html"
   },
   {
     "title": "Another Post",
     "labels": ["Blogger", "HTML"],
-    "url": "post2.html"
+    "url": "posts/posts2.html"
   }
 ]
