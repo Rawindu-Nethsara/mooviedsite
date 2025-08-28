@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Blog</title>
+<style>
+body { font-family: Arial; padding: 20px; }
+.post { margin-bottom: 15px; }
+.post-title { font-size: 1.2em; font-weight: bold; }
+.post-labels { font-size: 0.9em; color: gray; }
+</style>
 </head>
 <body>
-  <h1>My Blog</h1>
-  <ul id="posts"></ul>
+<h1>My Blog</h1>
+<div id="posts-container"></div>
 
-  <script>
-    fetch('posts.json')
-      .then(res => res.json())
-      .then(posts => {
-        const list = document.getElementById('posts');
-        posts.forEach(post => {
-          const li = document.createElement('li');
-          li.innerHTML = `<strong>${post.title}</strong> (${post.date}): ${post.content}`;
-          list.appendChild(li);
-        });
-      });
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
