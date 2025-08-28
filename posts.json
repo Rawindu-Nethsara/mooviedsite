@@ -1,4 +1,12 @@
 [
-  {"title": "Hello World", "content": "This is my first post!", "date": "2025-08-28"},
-  {"title": "Second Post", "content": "Another post here!", "date": "2025-08-29"}
+  {
+    "title": "My First Post",
+    "labels": ["Tech", "JavaScript"],
+    "url": "post1.html"
+  },
+  {
+    "title": "Another Post",
+    "labels": ["Blogger", "HTML"],
+    "url": "post2.html"
+  }
 ]
