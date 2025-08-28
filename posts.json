@@ -3,7 +3,7 @@
     "title": "My First Post",
     "labels": ["Tech", "JavaScript"],
     "url": "posts/posts1.html",
-    "image": "images/post1.jpg"
+    "image": "https://res.cloudinary.com/drrjjz081/image/upload/v1746340015/1421263-2000x1125-desktop-hd-wednesday-addams-wallpaper-image_lpcug9.jpg"
   },
   {
     "title": "Another Post",
