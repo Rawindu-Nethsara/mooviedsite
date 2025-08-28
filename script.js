@@ -1,4 +1,3 @@
-// Fetch posts from JSON
 fetch('posts.json')
   .then(response => response.json())
   .then(posts => {
@@ -8,7 +7,7 @@ fetch('posts.json')
       postDiv.classList.add('post');
 
       const title = document.createElement('a');
-      title.href = post.url;
+      title.href = post.url; // now points to posts/posts1.html
       title.textContent = post.title;
       title.classList.add('post-title');
 
